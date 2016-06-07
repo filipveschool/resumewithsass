@@ -1,0 +1,10 @@
+{
+  "package": {
+    "title": "angular2gulpsassdefinitieveresume",
+    "name": "angular2gulpsassdefinitieveresume",
+    "version", "1.0",
+    "homepage": "https://github.com/user/filipveschool/angular2gulpsassdefinitieveresume",
+    "description": "Sass Library does that thing"
+  },
+  "autofill": "false"
+}

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="compass-library">
+    <CLASSES>
+      <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/breakpoint-2.7.0" />
+      <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sassy-maps-0.4.0" />
+      <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/susy-2.2.12" />
+      <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

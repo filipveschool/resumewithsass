@@ -1,0 +1,68 @@
+/*
+You have to change two of the global settings in order to use asymmetric grids with Susy.
+They are columns and output.
+columns must be a Sass list if you want to work with Asymmetric grids.
+*/
+
+$susy: (
+        //columns: 1 2 3 2 1,
+        columns: 1 1 1 1 1 1 1 1 1 1 1 1,
+
+        debug: (
+                image: show,
+                color: blue,
+                //output: overlay, // dit toont de kleur alleen als je over de toggle-icon hovert rechtsboven
+                output: background, // dit toont de kleur altijd
+                toggle: top right
+        ),
+        gutters:1/8,
+        global-box-sizing: border-box,
+        output:isolate
+);
+
+.container{
+  @include container();
+}
+
+.column-1st {
+  //Je hebt 12 kolommen
+  // 1 at 6 betekent ==> we nemen 1 kolom als breedte en beginnen in kolom 6.
+  @include span(1 at 6 first);
+}
+
+.column-2nd {
+  @include span(1 last);
+}
+
+footer{
+  //full betekent volledige breedte ingesteld dus 100%
+  @include span(full);
+  //@include show-grid();
+
+  text-align: center;
+
+  & .column1{
+    //Je hebt 12 kolommen
+    // 1 at 6 betekent ==> we nemen 1 kolom als breedte en beginnen in kolom 6.
+    //je begint te tellen vanaf kolom 1 en de laatste kolom is kolom 12
+    @include span(3 at 2);
+    background-color: #00AA00;
+  }
+
+  & .column2{
+    @include span(3 at 5);
+    background-color: #00AA00;
+  }
+
+  & .column3{
+    @include span(3 at 8);
+    background-color: #00AA00;
+  }
+
+}
+
+// each img will span 3 of 12 columns,
+// with 4 images in each row:
+.gallery img {
+  @include gallery(3 of 12);
+}

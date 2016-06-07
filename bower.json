@@ -1,0 +1,17 @@
+{
+  "name": "resumewithsass",
+  "authors": [
+    "Filip Vanden Eynde"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "susy": "^2.2.12"
+  },
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.0"
+  }
+}

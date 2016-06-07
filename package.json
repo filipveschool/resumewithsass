@@ -1,0 +1,40 @@
+{
+  "name": "resumewithsass",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npm run lite\" npm run gulpsass\" npm run gulpscript\" ",
+    "lite": "lite-server",
+    "gulpstart": "gulp watch",
+    "gulpsass": "gulp sass",
+    "gulpscripts": "gulp scripts",
+    "gulpbrowserify": "gulp browserSync",
+    "prod": "gulp --production",
+    "sassdoc": "./node_modules/.bin/sassdoc resources/assets/sass/ sassdoc --config=.sassdocrc && echo 'Documentation successfully generated in sassdoc/index.html'",
+    "sassdoc-deploy-first-time": "git add sassdoc && git commit -m 'Compile SassDoc' --allow-empty && git subtree push --prefix sassdoc origin gh-pages && echo 'Documentation successfully deployed to http://filipveschool.github.io/angular2gulpsassdefinitieveresume/'",
+    "sassdoc-deploy": "git add sassdoc && git commit -m 'Compile SassDoc' --allow-empty && git push origin :gh-pages && git subtree push --prefix sassdoc origin gh-pages && echo 'Documentation successfully deployed to http://filipveschool.github.io/angular2gulpsassdefinitieveresume/'"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.3",
+    "jquery": "^2.2.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.12.12",
+    "browserify": "^13.0.1",
+    "concurrently": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1",
+    "laravel-elixir": "^5.0.0",
+    "lite-server": "^2.2.0",
+    "sassdoc": "^2.1.20",
+    "sassdocify": "^0.3.4",
+    "typescript": "^1.8.10",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:filipveschool/resumewithsass.git"
+  },
+  "main": "index.html"
+}

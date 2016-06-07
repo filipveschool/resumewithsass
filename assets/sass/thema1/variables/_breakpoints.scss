@@ -1,0 +1,19 @@
+///Breakpoints
+
+$breakSmall:          480px  !default;
+$breakMedium:         767px  !default;
+$breakMediumLarge:    979px  !default; // (+1 = default desktop)
+$breakLarge:          1200px !default;
+
+/// Responsive breakpoints
+
+$breakpoints: (
+        "phone":        400px,
+        "phone-wide":   480px,
+        "phablet":      560px,
+        "tablet-small": 640px,
+        "tablet":       768px,
+        "tablet-wide":  1024px,
+        "desktop":      1248px,
+        "desktop-wide": 1440px
+);
