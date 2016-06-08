@@ -26,6 +26,7 @@ $regent-grey:               #808c99;
 $pale-sky:                  #6b717f;
 $midnight-blue:             #036;
 $black:                     #000;
+$blackgrey:                 #333333;
 
 // main color palette
 // =============
@@ -35,8 +36,33 @@ $color-accent:              $patina;
 $color-shadow:              rgba($black, .125);
 $color-note:                #666;
 
+//
+// Grayscale.
+//
+
+$black:          #000 !default;
+$grayDarker:     #222 !default;
+$grayDark:       #333 !default;
+$gray:           #555 !default;
+$grayLight:      #999 !default;
+$grayLighter:    #eee !default;
+$white:          #fff !default;
+
+//
+// General Accent Colors.
+//
+
+$blue:        #049cdb !default;
+$blueDark:    #0064cd !default;
+$green:       #46a546 !default;
+$red:         #9d261d !default;
+$yellow:      #ffc40d !default;
+$orange:      #f89406 !default;
+$pink:        #c3325f !default;
+$purple:      #7a43b6 !default;
+
 // Common colors
-$color-background:          $white;
+$color-background:          #f5f5f5;
 $color-background-shade:    $iron;
 $color-background-invert:   $hopbush;
 $color-text:                darken($pale-sky, 15);
@@ -47,8 +73,6 @@ $color-text-invert:         rgba($color-background, .75);
 $color-text-strong-invert:  $color-background;
 
 // Links
-$color-link:                $color-primary;
-$color-link-hover:          $midnight-blue;
 $color-link-visited:        $bouquet;
 
 // Code

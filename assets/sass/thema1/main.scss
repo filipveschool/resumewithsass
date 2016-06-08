@@ -7,14 +7,17 @@
 
 // 1. Configuration and helpers
 @import "variables/colors";
-@import "variables/font-stacks";
+@import "variables/typography";
+//@import "variables/font-stacks";
+@import "variables/common-variables";
 @import "variables/breakpoints";
 @import "abstracts/functions";
 @import "abstracts/mixins";
 
+
 // 2. Vendors
-//@import
-//'vendor/normalize';
+//@import '../../../node_modules/normalize-scss/sass/normalize';
+@import "base/normalize";
 
 // 3. Base stuff
 @import "base/configuresusy";
@@ -31,6 +34,7 @@
 // 5. Components
 //@import
 //'components/button';
+@import "layout/social";
 
 // 6. Page-specific styles
 //@import
@@ -39,3 +43,5 @@
 // 7. Themes
 //@import
 //'themes/default';
+@import "../vendor/font-awesome-aanpassing";
+@import "../../../node_modules/font-awesome/scss/font-awesome";

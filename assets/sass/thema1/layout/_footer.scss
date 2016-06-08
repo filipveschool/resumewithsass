@@ -1,0 +1,52 @@
+/*footer{
+  //full betekent volledige breedte ingesteld dus 100%
+  @include span(full);
+  //@include show-grid();
+  background-color: $color-background;
+  //top right bottom left
+  @include padding(60px null 60px null);
+  color: $blackgrey;
+  text-align: center;
+
+  & .column1{
+    //Je hebt 12 kolommen
+    // 1 at 6 betekent ==> we nemen 1 kolom als breedte en beginnen in kolom 6.
+    //je begint te tellen vanaf kolom 1 en de laatste kolom is kolom 12
+    @include span(3 at 2);
+    background-color: #00AA00;
+  }
+
+  & .column2{
+    @include span(3 at 5);
+    background-color: #00AA00;
+  }
+
+  & .column3{
+    @include span(3 at 8);
+    background-color: #00AA00;
+  }
+
+}*/
+
+footer{
+  //full betekent volledige breedte ingesteld dus 100%
+  @include span(full);
+  //@include show-grid();
+  background-color: $color-background;
+  //top right bottom left
+  @include padding(60px null 60px null);
+  color: $blackgrey;
+  text-align: center;
+
+ & .footer-container{
+
+
+   &.p{
+margin: 0;
+   }
+ }
+
+
+
+}
+

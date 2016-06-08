@@ -31,3 +31,17 @@
     @content;
   }
 }
+
+// Tab Focus
+// =============================================================================
+
+//
+// 1. Default.
+// 2. Webkit.
+//
+
+@mixin tab-focus() {
+  outline: thin dotted #333; // 1
+  outline: 5px auto $linkColor; // 2
+  outline-offset: -1px;
+}

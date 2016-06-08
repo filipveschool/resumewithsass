@@ -1,0 +1,35 @@
+ul.social{
+  overflow: hidden;
+  list-style-type: none;
+  display: block;
+  //top right bottom left
+  @include margin(30px null null null);
+
+  & li{
+    display: inline-block;
+    @include margin(null 10px null 10px);
+    & a{
+      font-size:40px;
+      color: rgba(51, 51, 51, 0.3);
+      @include transition(all 0.25s ease);
+    }
+  }
+
+  & .facebook:hover{
+  color:$facebookColor;
+  }
+  & .twitter:hover{
+    color:$twitterColor;
+  }
+  & .instagram:hover{
+    color:$instagramColor;
+  }
+  & .linkedin:hover{
+    color: $linkedinColor;
+  }
+  & .github:hover{
+    color: $githubColor;
+  }
+
+
+}

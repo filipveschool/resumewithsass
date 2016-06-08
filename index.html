@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-<link rel="stylesheet" href="css/thema1.css">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="css/thema1.css">
 </head>
 <body>
 
@@ -20,18 +21,71 @@
 </div>
 
 <section>
-<ul class="gallery">
-    
-</ul>
+    <ul class="gallery">
+
+    </ul>
+
+</section>
+
+<section id="contactme" class="contactme">
+
+<h1>Contact me!</h1>
 
 </section>
 
 
 <footer>
-    <div class="column1">div 1 footer</div>
+    <div class="footer-container">
+        <p>Copyright ©
+            <a href="http://www.vandeneyndefilip.be">Filip Vanden Eynde</a>. All rights reserved.</p>
+        <p>Made with love by
+            <a href="http://www.vandeneyndefilip.be">Filip Vanden Eynde</a>
+        </p>
+        <ul class="social">
+            <li>
+                <a class="facebook" target="_blank" href="https://www.facebook.com/filip.vandeneynde.7">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a class="twitter" target="_blank" href="https://twitter.com/vdefilip">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a class="instagram" target="_blank" href="https://www.instagram.com/filipve1/">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a class="linkedin" target="_blank" href="https://be.linkedin.com/in/filipve">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </li>
+            <!--<li><a class="git" target="_blank" href="#"><i class="fa fa-git"></i></a></li>-->
+            <li>
+                <a class="github" target="_blank" href="https://github.com/filipveschool">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <!--<div class="column1">div 1 footer</div>
     <div class="column2">div 2 footer</div>
-    <div class="column3">div 3 footer</div>
+    <div class="column3">div 3 footer</div>-->
 </footer>
+
+<script src="js/jquery/jquery.min.js"></script>
+
+<script>
+    //get height of hero and set bg height
+    var bgHeight = function () {
+        var heroHeight = $('.hero').outerHeight();
+        $('.bg').css('height', heroHeight);
+    };
+    bgHeight();
+</script>
 
 </body>
 </html>

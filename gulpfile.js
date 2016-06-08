@@ -93,10 +93,13 @@ elixir(function (mix2) {
 
 /* alle css files samenvoegen tot 1 bestand */
 elixir(function (mix3) {
+    //vanuit assets\css folder denken
     mix3.styles([
+        //'../../node_modules/normalize.css/normalize.css',
         'assets/css/thema1.css'
     ],'css/thema1.css')
 });
+
 
 /* all scripts stuff samenvoegen naar de js folder in root tot 1 bestand*/
 
