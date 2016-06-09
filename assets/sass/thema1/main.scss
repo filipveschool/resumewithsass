@@ -7,6 +7,7 @@
 @import "../../../bower_components/mappy-breakpoints/mappy-breakpoints";
 @import "../../../node_modules/typi/scss/typi";
 @import "../../../bower_components/modular-scale/stylesheets/modular-scale";
+$breakpoint-to-ems: true;
 
 // 1. Configuration and helpers
 @import "variables/colors";
@@ -33,6 +34,8 @@
 // 4. Layout-related sections
 //@import
 //'layout/header',
+@import "layout/header";
+@import "layout/navbar";
 @import "layout/footer";
 
 // 5. Components
