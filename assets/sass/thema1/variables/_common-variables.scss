@@ -90,12 +90,12 @@ $githubColor:       #333    !default;
 //
 
 $btnColor:              $white          !default;
-$btnBackground:         $accentColor    !default;
+$btnBackground:         $blackgrey      !default;
 $btnBorder:             darken($btnBackground, 20%)    !default;
 $btnColorHover:         $white          !default;
 $btnBorderHover:        $linkColorHover !default;
 $btnBackgroundHover:    $linkColorHover !default;
-
+$btnFontSize:           13px            !default;
 
 //
 // Box shadows.

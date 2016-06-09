@@ -80,6 +80,9 @@ elixir(function(mix) {
         'assets/sass/vendor/font-awesome/'
     );
 
+    mix.copy('node_modules/normalize.css/normalize.css',
+    'css/normalize.css/');
+
 });
 
 

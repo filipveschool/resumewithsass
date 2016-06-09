@@ -4,6 +4,7 @@ ul.social{
   display: block;
   //top right bottom left
   @include margin(30px null null null);
+  padding:0;
 
   & li{
     display: inline-block;

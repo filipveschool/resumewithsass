@@ -146,16 +146,15 @@ html {
  * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
  */
 *, *::before, *::after {
-  box-sizing: inherit; }
+  box-sizing: border-box; }
 
 body {
   -webkit-font-smoothing: antialiased;
   color: #484c55;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   min-height: 100%;
   overflow-x: hidden;
-  text-rendering: optimizeLegibility;
-  font-size: 16px; }
+  text-rendering: optimizeLegibility; }
 
 /**
  * Basic styles for links
@@ -172,70 +171,112 @@ img {
   height: auto;
   max-width: 100%; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+p {
+  margin: 0 0 10px; }
+
+/* for modular scale library and typi */
+/*
+$typi-ms: (
+        null: 1.2,
+        small: 1.333,
+        large: 1.618
+);
+*/
+html {
+  font-size: 87.5%;
+  line-height: 1.4; }
+  @media all and (min-width: 48em) {
+    html {
+      font-size: 100%; } }
+  @media all and (min-width: 125em) {
+    html {
+      font-size: 112.5%; } }
+
+h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: normal;
   color: #4ac3bf;
   text-transform: uppercase; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  margin: 1.25em 0 0.2em;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin: 1.25em 0 0.5em;
   text-rendering: optimizelegibility; }
 
-h1,
-.h1 {
-  margin-top: 1em;
-  font-size: 400%;
-  line-height: 1.1; }
-
-h2,
-.h2 {
-  font-size: 285.7%;
+h1, .h1 {
+  font-size: 4.2087269129rem;
   line-height: 1.2; }
+  @media all and (min-width: 48em) {
+    h1, .h1 {
+      font-size: 4.2087269129rem;
+      line-height: 1.2; } }
+  @media all and (min-width: 125em) {
+    h1, .h1 {
+      font-size: 5.6102329749rem;
+      line-height: 1.4; } }
 
-h3,
-.h3 {
-  font-size: 228.5%;
-  line-height: 1.3; }
+h2, .h2 {
+  font-size: 3.1573345183rem;
+  line-height: 1.2; }
+  @media all and (min-width: 48em) {
+    h2, .h2 {
+      font-size: 3.1573345183rem;
+      line-height: 1.2; } }
+  @media all and (min-width: 125em) {
+    h2, .h2 {
+      font-size: 4.2087269129rem;
+      line-height: 1.3; } }
 
-h4,
-h5,
-h6,
-.h4,
-.h5,
-.h6 {
+h3, .h3 {
+  font-size: 2.368593037rem;
+  line-height: 1.2; }
+  @media all and (min-width: 48em) {
+    h3, .h3 {
+      font-size: 2.368593037rem;
+      line-height: 1.2; } }
+  @media all and (min-width: 125em) {
+    h3, .h3 {
+      font-size: 3.1573345183rem;
+      line-height: 1.3; } }
+
+h4, h5, h6, .h4, .h5, .h6 {
   margin-top: 1.75em;
-  margin-bottom: 0.5em;
-  line-height: 1.4; }
+  margin-bottom: 0.5em; }
 
-h4,
-.h4 {
-  font-size: 171.4%; }
+h4, .h4 {
+  font-size: 1.776889rem;
+  line-height: 1.2; }
+  @media all and (min-width: 48em) {
+    h4, .h4 {
+      font-size: 1.776889rem;
+      line-height: 1.2; } }
+  @media all and (min-width: 125em) {
+    h4, .h4 {
+      font-size: 2.368593037rem;
+      line-height: 1.3; } }
 
-h5,
-.h5 {
-  font-size: 150%; }
+h5, .h5 {
+  font-size: 1.333rem;
+  line-height: 1.2; }
+  @media all and (min-width: 48em) {
+    h5, .h5 {
+      font-size: 1.333rem;
+      line-height: 1.2; } }
+  @media all and (min-width: 125em) {
+    h5, .h5 {
+      font-size: 1.776889rem;
+      line-height: 1.3; } }
 
-h6,
-.h6 {
-  font-size: 100%;
-  text-transform: uppercase; }
+h6, .h6 {
+  font-size: 1rem;
+  line-height: 1.2; }
+  @media all and (min-width: 48em) {
+    h6, .h6 {
+      font-size: 1rem;
+      line-height: 1.2; } }
+  @media all and (min-width: 125em) {
+    h6, .h6 {
+      font-size: 1.333rem;
+      line-height: 1.3; } }
 
 section {
   padding-top: 20px;
@@ -245,8 +286,43 @@ section {
 Specifiek voor alle delen
 */
 /* contactme section */
-.contactme h1 {
-  text-align: center; }
+.contactme {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  .contactme h1 {
+    text-align: center; }
+  .contactme .googlemap {
+    margin: 10px 15px;
+    height: 420px;
+    overflow: hidden;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+    @media all and (max-width: 47.9375em) {
+      .contactme .googlemap {
+        width: 83.1775700935%;
+        float: left;
+        margin-left: 8.4112149533%;
+        margin-right: -100%; } }
+  .contactme .adresgegevens {
+    clear: both;
+    width: 41.1214953271%;
+    float: left;
+    margin-left: 8.4112149533%;
+    margin-right: -100%; }
+    .contactme .adresgegevens .listcontactgegevens {
+      list-style-type: none;
+      padding: 0; }
+      .contactme .adresgegevens .listcontactgegevens li {
+        margin-bottom: 10px; }
+  .contactme .contactformulier {
+    width: 41.1214953271%;
+    float: left;
+    margin-left: 50.4672897196%;
+    margin-right: -100%; }
 
 /*footer{
   //full betekent volledige breedte ingesteld dus 100%
@@ -287,14 +363,98 @@ footer {
   padding-bottom: 60px;
   color: #333333;
   text-align: center; }
-  footer .footer-container.p {
-    margin: 0; }
+  footer .footer-container {
+    padding-right: 15px;
+    padding-left: 15px; }
+    footer .footer-container.p {
+      margin: 0; }
+
+.button,
+input[type="submit"] {
+  background-color: #333333;
+  color: #fff;
+  font-weight: bold;
+  border: 0;
+  cursor: pointer;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-right: 25px;
+  padding-left: 25px;
+  line-height: 40px;
+  transition: all 0.25s ease; }
+  .button:hover,
+  input[type="submit"]:hover {
+    text-decoration: none;
+    color: #fff;
+    border-color: black;
+    background-color: #1a1a1a; }
+  .button:focus,
+  input[type="submit"]:focus {
+    outline: thin dotted #333;
+    outline: 5px auto #16a085;
+    outline-offset: -1px; }
+  .button:hover, .button:active,
+  input[type="submit"]:hover,
+  input[type="submit"]:active {
+    outline: 0 !important; }
+
+.x-btn.x-btn-jumbo {
+  padding: 0.643em 1.429em 0.786em;
+  font-size: 0.75rem; }
+
+.x-btn.x-btn-x-large {
+  padding: 0.714em 1.286em 0.857em; }
+
+.x-btn.x-btn-large {
+  padding: 0.579em 1.105em 0.842em; }
+
+.x-btn.x-btn-regular {
+  padding: 0.563em 1.125em 0.813em; }
+
+.x-btn.x-btn-small {
+  padding: 0.429em 1.143em 0.643em; }
+
+.x-btn.x-btn-mini {
+  padding: 0.385em 0.923em 0.538em; }
+
+.x-btn.x-btn-square {
+  border-radius: 0; }
+
+.x-btn.x-btn-rounded {
+  border-radius: 0.225em; }
+
+.x-btn.x-btn-pill {
+  border-radius: 100em; }
+
+.x-btn-block {
+  display: block;
+  width: 100%; }
+
+.x-btn-block + .x-btn-block {
+  margin-top: 1em; }
+
+input[type="text"], textarea, input[type="email"] {
+  border: 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(119, 119, 119, 0.2);
+  width: 100%;
+  color: #333333;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px; }
+
+textarea {
+  min-height: 120px;
+  margin-top: 20px; }
 
 ul.social {
   overflow: hidden;
   list-style-type: none;
   display: block;
-  margin-top: 30px; }
+  margin-top: 30px;
+  padding: 0; }
   ul.social li {
     display: inline-block;
     margin-right: 10px;

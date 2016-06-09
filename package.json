@@ -19,7 +19,8 @@
     "font-awesome": "^4.6.3",
     "jquery": "^2.2.3",
     "normalize-scss": "^5.0.3",
-    "normalize.css": "^4.1.1"
+    "normalize.css": "^4.1.1",
+    "typi": "^2.2.3"
   },
   "devDependencies": {
     "browser-sync": "^2.12.12",

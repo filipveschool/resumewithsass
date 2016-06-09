@@ -9,9 +9,11 @@
     "bower_components"
   ],
   "dependencies": {
-    "susy": "^2.2.12"
+    "susy": "^2.2.12",
+    "mappy-breakpoints": "^0.2.3"
   },
   "devDependencies": {
-    "breakpoint-sass": "^2.7.0"
+    "breakpoint-sass": "^2.7.0",
+    "modular-scale": "^2.1.3"
   }
 }

@@ -4,6 +4,9 @@
 //@import "susy";
 //@import "breakpoint";
 @import "../../../bower_components/breakpoint-sass/stylesheets/breakpoint";
+@import "../../../bower_components/mappy-breakpoints/mappy-breakpoints";
+@import "../../../node_modules/typi/scss/typi";
+@import "../../../bower_components/modular-scale/stylesheets/modular-scale";
 
 // 1. Configuration and helpers
 @import "variables/colors";
@@ -22,6 +25,7 @@
 // 3. Base stuff
 @import "base/configuresusy";
 @import "base/base";
+
 //'base/fonts',
 //'base/typography',
 //'base/helpers';
@@ -34,6 +38,8 @@
 // 5. Components
 //@import
 //'components/button';
+@import "components/buttons";
+@import "components/forms.scss";
 @import "layout/social";
 
 // 6. Page-specific styles

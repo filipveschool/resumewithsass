@@ -40,6 +40,8 @@ footer{
 
  & .footer-container{
 
+   @include padding(null 15px null 15px);
+
 
    &.p{
 margin: 0;

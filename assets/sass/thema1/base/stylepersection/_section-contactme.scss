@@ -1,9 +1,47 @@
 /* contactme section */
 
 .contactme{
+  @include span(full);
+  //@include show-grid();
 
   h1{
     text-align: center;
+  }
+
+  & .googlemap{
+    @include margin(10px 15px 10px 15px);
+    height: 420px;
+    overflow:hidden;
+
+    @include span(full);
+
+    @include mappy-bp(max small){
+      //Je hebt 12 kolommen
+      // 10 at 2 betekent ==> we nemen 10 kolommen als breedte en beginnen in kolom 2.
+      //je begint te tellen vanaf kolom 1 en de laatste kolom is kolom 12
+      @include span(10 at 2);
+    }
+
+
+
+  }
+
+  & .adresgegevens{
+    clear:both;
+    @include span(5 at 2);
+
+    & .listcontactgegevens{
+      list-style-type: none;
+      padding:0;
+
+      & li{
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  & .contactformulier{
+    @include span(5 at 7);
   }
 
 }

@@ -1,0 +1,19 @@
+input[type="text"], input[type="email"]{
+  border: 0;
+  //top right bottom left
+  @include border-style(null null solid null);
+  //top right bottom left
+  @include border-width(null null 1px null);
+  //top right bottom left
+  @include border-color(null null rgba(119, 119, 119, 0.2) null);
+  width: 100%;
+  color: $blackgrey;
+  @include padding(5px null 5px null);
+  @include margin(null null 10px null);
+}
+
+textarea{
+  @extend input[type="text"];
+  min-height: 120px;
+  @include margin(20px null null null);
+}

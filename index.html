@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
-    <link rel="stylesheet" href="css/thema1.css">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- #DNS prefetching -->
+    <!-- http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers -->
+    <link rel="dns-prefetch" href="//ajax.googleapis.com">
+    <link rel="dns-prefetch" href="//use.typekit.net">
+    <link rel="dns-prefetch" href="//google-analytics.com">
+
+    <!-- #Asset Prefetching -->
+    <!-- Fetch and Download Assets before requested by the user  -->
+    <!-- http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/#section:resource-prefetching -->
+    <link rel="prefetch" href="">
+
+    <!-- #Page Prefetching -->
+    <!-- http://calendar.perfplanet.com/2012/speed-up-your-site-using-prefetching -->
+    <link rel="prefetch" href="index.html">
+
+    <title>githubresume</title>
+    <meta name="description" content="">
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Modernizer, cause some browsers suck -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+    <link rel="stylesheet" href="css/normalize.css/normalize.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/thema1.css" type="text/css" media="screen">
+
+
 </head>
 <body>
 
@@ -27,10 +54,67 @@
 
 </section>
 
+<section>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+</section>
+
 <section id="contactme" class="contactme">
 
 <h1>Contact me!</h1>
 
+    <div class="googlemap" id="googlemap"></div>
+
+    <div class="adresgegevens">
+        <h2>Contact address</h2>
+
+        <ul class="listcontactgegevens">
+            <li>
+                <i class="fa fa-3x fa-map-marker" aria-hidden="true"></i>
+                kruisvijverstraat 22, 9400 Ninove, België.</li>
+            <li>Phone : +3247839817</li>
+            <li>Email: filipve@outlook.com</li>
+            <li>Website : <a href="http://vandeneyndefilip.be" target="_blank">http://vandeneyndefilip.be</a></li>
+        </ul>
+
+        <ul class="social-share">
+            <li>
+                <a href="javascript:;" class="soc-fb">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a class="soc-tw" href="#">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="soc-linkedin">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="soc-gplus">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="contactformulier">
+        <h2>Let's have a fun</h2>
+        <form action="sendmail.php" method="post" id="contactformulier">
+            <p><input type="text" placeholder="Your name *" name="name"></p>
+            <p><input type="email" placeholder="Your email *" name="email"></p>
+            <p><textarea placeholder="Your message" name="message"></textarea></p>
+            <p><input type="submit" value="Send message"></p>
+        </form>
+
+    </div>
 </section>
 
 
@@ -86,6 +170,20 @@
     };
     bgHeight();
 </script>
+
+<script>
+    var googlemap;
+    function initMap() {
+        googlemap = new google.maps.Map(document.getElementById('googlemap'), {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 8
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCq2s9Ly5B1-S2peKWo8OrN-oqyF_z3qII&callback=initMap"
+        async defer></script>
+
+<!-- Google Analytics -->
 
 </body>
 </html>
